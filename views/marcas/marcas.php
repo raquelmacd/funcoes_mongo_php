@@ -10,16 +10,14 @@
     </thead>
     <tbody>
    
-
+<?php foreach($data as $d){ ?>
         <tr>
         
-        <td>dfasd</td>
-        <td>dfa</td>
-        <td>asdf</td>
-        <td><a href="editar?id=" class="bnt">Editar</a></td>
+        <td><?php echo $d->marca ?></td>
+        <td><?php echo $d->descricao ?></td>
+        <td><a href="marcas_edit?id=<?php echo $d->_id ?>" class="bnt"><img src="assets/svg/editar.svg" style="width:1em;height:auto"></a></td>
         </tr>
-        <tr>
-        
+<?php } ?>
         
     </tbody>
     </table>
